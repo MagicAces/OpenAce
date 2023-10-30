@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "openace_backend": {
+      "main": "src/openace_backend/main.mo",
+      "type": "motoko"
+    },
+    "openace_frontend": {
+      "dependencies": [
+        "openace_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/openace_frontend/src/index.html"
+      },
+      "source": [
+        "src/openace_frontend/assets",
+        "dist/openace_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
