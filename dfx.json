@@ -4,6 +4,10 @@
       "main": "src/openace_backend/main.mo",
       "type": "motoko"
     },
+    "nft": {
+      "main": "src/NFT/nft.mo",
+      "type": "motoko"
+    },
     "openace_frontend": {
       "dependencies": [
         "openace_backend"
